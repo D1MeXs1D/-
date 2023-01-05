@@ -1,0 +1,27 @@
+
+//  ассоциативный массив со списком продуктов и их цен
+let fruits = new Map([
+
+
+  // 1 столбец это "ключ", 2 столбец это "содержимое"  = [key, value]
+    ["Яблоко",  "150р"],
+  
+    ["Груша", "200р"],
+  
+    ["Банан",    "60р"]
+  
+  ]);
+
+
+  let sizeObject = fruits.size; 
+  //  функция size позволяет узнать сколько элементов в массиве есть 
+
+  alert (sizeObject + " элемента ассоциативного массива");
+
+  let fruitsNumber = 1; // для подсчета продуктов
+
+  for (let elem of fruits) { // то же самое, что и recipeMap.entries()
+    console.log(`Фрукт ${fruitsNumber} -  ${elem}.`);
+    fruitsNumber++;
+ }
+

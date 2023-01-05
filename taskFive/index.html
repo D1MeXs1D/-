@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [6, 4, 8, 3, 1, 5];
+        // 1 способ подсчитать кол-во элементов 
+        console.log(arr.length + " элементов (1 способ подсчета)");
+
+        // 2 способ подсчета (с проверкой)
+        if (arr.length > 0) {
+
+            let  sizeArr = 0;
+                for ( let i = 0; i < arr.length; i++ ) {
+                    sizeArr += 1
+            }
+            console.log(sizeArr + " элементов (2 способ подсчета)");
+        }
+        else {
+            console.log ("массив пустой (2 способ подсчета)");
+        }
+
+        let even = 0;
+        let odd = 0;
+
+        for ( let i = 0; i < arr.length; i++ ) {
+            console.log(arr[i]  + " элемент №" + i); 
+            // вывод каждой переменной 
+
+
+            // дополнение, подсчет четных и нечетных значений
+            if (arr[i] % 2 != 0) {
+                odd += 1;
+            }
+            else {
+                even += 1;
+            }
+        }
+
+
+        console.log ("четных чисел = " + even + " нечетных чисел = " + odd);
+    </script>
+</body>
+</html>
